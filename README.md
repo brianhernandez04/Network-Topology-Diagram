@@ -1,4 +1,4 @@
-# Network Topology Diagram ( LAN, WAN, Switch, Firewall)
+# Network Topology Diagram 
 
 ![Network Topology Diagram drawio](https://github.com/user-attachments/assets/3c5115b2-b07c-4abd-988d-31fb8c973ed9)
 
