@@ -2,26 +2,61 @@
 
 ![Network Topology Diagram drawio](https://github.com/user-attachments/assets/3c5115b2-b07c-4abd-988d-31fb8c973ed9)
 
-<b>Above is a network topology diagram created with networking principles such as LAN, WAN, Wireless, and Firewalls. This diagram intends to demonstrate how networks are interconnected in their simplest form.</b>
+## Web/Internet
+- <b>Function: The internet ultimately is a global network that allows users to communicate, share information, and access web pages.
+  
+- Importance:  In this specific example, we focus on the web due to 95% of security breaches being human error. Users are typically browsing/researching via the web which can lead to potential threats.</b>
 
-## Let me walk you through each of the components of this diagram.
+## Primary Modem
+- <b>Function: In its simplest form, a modem is intended to allow communication between one or more devices and the internet.
+  
+- Popular ISP's: Spectrum, Verizon, AT&T</b>
 
-- <b>Web/Internet: At the top left of this diagram, we have the internet. The internet ultimately is a global network that allows users to communicate, share information, and access web pages. In this specific example, we focus on the web due to 95% of security breaches being human error. And in a business setting users are typically browsing/researching via the web which can lead to potential threats.</b>
+## Firewall
+- <b>Function: Firewalls allow for policies to be configured to determine whether traffic is allowed to enter the host network.
+  
+- Popular Manufacturers: Fortinet, Palo Alto, Cisco</b>
 
-- <b>Primary Modem: In its simplest form, a modem is intended to allow communication between one or more devices and the internet. Popular ISP are (Spectrum, Verizon, AT&T)</b>
+## Backup Internet
+- <b>Function: To allow for network resiliency, I have included the backup internet modem. This device allows for a seamless transition, if the primary modem were to fail, and can prove invaluable to users who need constant reliable connections.
+  
+- Popular Manufacturers: Cisco, NETGEAR, Cradlepoint</b>
 
-- <b>Firewall: Next, we have the Firewall. These devices allow for policies to be configured to determine whether traffic is allowed or not allowed to enter the host network. Popular Brands are (Fortinet, Palo Alto, Cisco)</b>
+## Network Switch
+- <b>Function: Connects all devices within a LAN/WAN, allowing multiple devices to communicate simultaneously.
 
-- <b>Backup Internet: To allow for network resiliency, I have included the backup modems. This device will allow for a seamlessly smooth transition say if the primary modem were to go down and can prove invaluable to users who need constant reliable connections. Popular brands are (Cisco, NETGEAR, Cradlepoint)</b>
+- Duplex: Switches are typically Full Duplex, unlike a Network Hub which only allows 1 instance of communication: Half Duplex.
 
-- <b>Network Switch: The device that connects all devices within a LAN/WAN is referred to as a Network Switch. Switches allow for multiple devices, users, IT equipment to communicate at the same time. Switches are typically Full Duplex, (unlike a Network Hub which only allows 1 instance of communication, Half Duplex.) Popular brands are (HP/Aruba, Cisco, NETGEAR)</b>
+- Popular Manufacturers: HP/Aruba, Cisco, NETGEAR</b>
 
-- <b>Wireless Router: Subsequently, we have a wireless router that allows Mobile devices such as Laptops, Tablets, & Cellphones to connect to the set network. Another primary function of a router is to receive and analyze packets and based on IP/MAC Addresses/Headers, the device then routes the data to the appropriate device within the network. Lastly, the router also provides the IP address for device given that the device is set for DHCP.Popular brands are (Spectrum, NETGEAR, Cisco)</b>
+## Wireless Router
+- <b>Function: Allows mobile devices such as laptops, tablets, and cellphones to connect to the network. Also, routes data packets to appropriate devices and assigns IP addresses using DHCP.
 
-- <b>Server: Servers essentialy are a computer system which stores data, resources, and provides services for devices within the network. For more complex networks, ideally we would utilize a cloud service provider such as AWS to launch several EC2 instances acrros multiple different Availablity Zones & Regions to increase the network resiliency in case of any possible DDos attacks. Popular brands are (HP, DELL, Lenovo)</b>
+- Popular Manufacturers: Spectrum, NETGEAR, Cisco</b>
 
-- <b>Patch Panel: Network switches connect to Patch Panels (typically via CAT5 RJ45 Cables) which then connect to wall ports across the building. It is best practice to label the wall ports in the building to easily trace the runs back to the patch panel and ultimately back to the switch to ensure the cable is patched into the correct port based; given that the switch has a configured VLAN. Alternatively, you can also utilize a Toner & Probe kit to trace a patch cable via its electrical signal.</b>
+## Server
+- <b>Function: Stores data, resources, and provides services to devices within the network.
+  
+- AWS: Ideally we would utilize a cloud service provider such as AWS to leverage ELB (Elastic Load Balancing) to automatically distribute any incoming traffic to be prepard in case of any possible DDos attacks.
+  
+- Popular Manufacturers: HP, DELL, Lenovo</b>
 
-- <b>User Devices: Lastly, we have the user devices which range from but are not limited to printers, POS systems, and desktops which are hooked up via an ethernet cable. These devices are patched into the wall ports, which lead to the patch panel, and ultimately go into the intended port on the switch based on the configured VLAN. These devices typically have statically set IP Addresses, Subnet masks, Default gateways, & DNS according to the network IP scheme.</b>
+## Patch Panel
+- <b>Function: Connects network switches to wall ports throughout a building, typically using CAT5 RJ45 cables. Helps in organizing and tracing network connections.
+  
+- Best Practice: Label wall ports to easily trace connections back to the patch panel and switch, ensuring cables are correctly patched into the switch according to the configured VLAN.
+
+- Toner & Probe Kit: Alternatively, you can also utilize a Toner & Probe kit to trace a patch cable via its electrical signal.</b>
+
+## User Devices
+- <b>Examples: Printers, POS systems, desktops, etc.
+
+- LAN Connection: These devices are patched into the wall ports, which lead to the patch panel, and ultimately go into the intended port on the switch based on the configured VLAN.
+
+- Wireless Connection: Devices connected wirlessly to a network, communicate via radio waves/frequencies and transmit data to the wireless router which then allows for internet access.
+  
+- Configuration: These devices typically have statically set IP Addresses, Subnet masks, Default gateways, & DNS according to the network IP scheme.</b>
+
+
 
 Authored by: Brian Hernandez
